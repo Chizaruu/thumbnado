@@ -1,8 +1,8 @@
 from PIL import Image, ImageDraw
 from config import *
-from thumbnado.utils import draw_logos, load_logos
-from thumbnado.utils import draw_title_text, draw_subtitle_text
-from thumbnado.utils import save_image
+from utils import draw_logos, load_logos
+from utils import draw_title_text, draw_subtitle_text
+from utils import save_image
 
 # Create a new image with the Discord background color
 img = Image.new('RGBA', (WIDTH, HEIGHT), BG_COLOR)

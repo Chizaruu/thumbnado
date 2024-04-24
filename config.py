@@ -20,9 +20,9 @@ DIRECTION = 'horizontal'
 OVERLAY_OPACITY = 127
 
 # Define the title text and font
-TITLE_TEXT = "BUILD GAMES ON DISCORD"
+TITLE_TEXT = "A Really Cool Title!"
 # Define the subtitle text and font (Helps break the ice with humour)
-SUBTITLE_TEXT = "Unity + Discord =<3"
+SUBTITLE_TEXT = "Subtitle Text Here"
 # Maximum WIDTH of the title text (80% of the image WIDTH)
 MAX_TITLE_WIDTH = WIDTH
 TITLE_FONT_SIZE = 150
@@ -47,7 +47,7 @@ TEXT_OUTLINE_COLOR = (0, 0, 0, 255)  # Black outline color (RGBA)
 
 # Choose the alignment option
 # Options: 'left', 'right', 'center', 'justified'
-ALIGNMENT = 'left'
+ALIGNMENT = 'center'
 
 # Specify the folder containing the logo images
 LOGO_FOLDER = 'Logos'
