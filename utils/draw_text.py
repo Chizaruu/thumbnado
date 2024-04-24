@@ -1,5 +1,5 @@
 from PIL import ImageDraw
-from config import *
+from configuration import *
 
 def draw_title_text(overlay, TITLE_TEXT, FONT_OPTION, MAX_TITLE_WIDTH, min_lines, alignment, text_outline_width, text_outline_color):
     overlay_draw = ImageDraw.Draw(overlay)

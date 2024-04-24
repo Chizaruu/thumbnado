@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-from config import *
+from configuration import *
 from utils import draw_logos, load_logos
 from utils import draw_title_text, draw_subtitle_text
 from utils import save_image

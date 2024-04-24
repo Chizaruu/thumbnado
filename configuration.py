@@ -25,21 +25,18 @@ TITLE_TEXT = "A Really Cool Title!"
 SUBTITLE_TEXT = "Subtitle Text Here"
 # Maximum WIDTH of the title text (80% of the image WIDTH)
 MAX_TITLE_WIDTH = WIDTH
-TITLE_FONT_SIZE = 150
+TITLE_FONT_SIZE = 140
 SUBTITLE_FONT_SIZE = 100
-REGULAR_FONT = ImageFont.truetype(
-    "System/Library/Fonts/impact.ttf", TITLE_FONT_SIZE)
-BOLD_FONT = ImageFont.truetype(
-    "System/Library/Fonts/GILLUBCD.TTF", TITLE_FONT_SIZE)  # Bold font
-SUBTITLE_FONT = ImageFont.truetype(
-    "System/Library/Fonts/impact.ttf", SUBTITLE_FONT_SIZE)
+REGULAR_FONT = ImageFont.truetype("fonts/Amaranth-Regular.otf", TITLE_FONT_SIZE)
+BOLD_FONT = ImageFont.truetype("fonts/Amaranth-Bold.otf", TITLE_FONT_SIZE)  # Bold font
+SUBTITLE_FONT = ImageFont.truetype("fonts/Amaranth-Regular.otf", SUBTITLE_FONT_SIZE)
 
 # Minimum number of lines for the title text
 MIN_LINES = 1  # Set to 1 for no minimum
 
 # Choose the font option
 # Options: 'regular', 'bold'
-FONT_OPTION = 'regular'
+FONT_OPTION = 'bold'
 
 # Text outline settings
 TEXT_OUTLINE_WIDTH = 1  # Adjust the outline WIDTH as desired
