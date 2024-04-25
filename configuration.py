@@ -1,50 +1,51 @@
+# configuration.py
+
+import argparse
 from PIL import ImageFont
 
-# Define the background color
-BG_COLOR = (54, 57, 63)
+parser = argparse.ArgumentParser(description='Generate thumbnails with customizable options.')
 
-# Define the image size
-WIDTH = 1280
-HEIGHT = 720
+parser.add_argument('--background-color', nargs=3, type=int, default=[54, 57, 63], help='Background color (RGB)')
+parser.add_argument('--image-width', type=int, default=1280, help='Image width')
+parser.add_argument('--image-height', type=int, default=720, help='Image height')
+parser.add_argument('--logo-size', type=int, default=110, help='Logo size')
+parser.add_argument('--logo-spacing', type=int, default=125, help='Logo spacing')
+parser.add_argument('--logo-direction', type=str, default='horizontal', help='Logo direction (horizontal, vertical, diagonal-left, diagonal-right)')
+parser.add_argument('--overlay-opacity', type=int, default=127, help='Overlay opacity (0-255)')
+parser.add_argument('--title-text', type=str, default='A Really Cool Title!', help='Title text')
+parser.add_argument('--subtitle-text', type=str, default='Subtitle Text Here', help='Subtitle text')
+parser.add_argument('--title-font-size', type=int, default=140, help='Title font size')
+parser.add_argument('--subtitle-font-size', type=int, default=100, help='Subtitle font size')
+parser.add_argument('--font-style', type=str, default='bold', help='Font style (regular, bold)')
+parser.add_argument('--title-font', type=str, default="fonts/Amaranth-Regular.otf", help='Path to the title font file')
+parser.add_argument('--title-font-bold', type=str, default="fonts/Amaranth-Bold.otf", help='Path to the bold title font file')
+parser.add_argument('--subtitle-font', type=str, default="fonts/Amaranth-Regular.otf", help='Path to the subtitle font file')
+parser.add_argument('--min-title-lines', type=int, default=1, help='Minimum number of lines for the title text')
+parser.add_argument('--text-outline-width', type=int, default=1, help='Text outline width')
+parser.add_argument('--text-outline-color', nargs=4, type=int, default=[0, 0, 0, 255], help='Text outline color (RGBA)')
+parser.add_argument('--text-alignment', type=str, default='center', help='Text alignment (left, right, center, justified)')
+parser.add_argument('--logo-directory', type=str, default='Logos', help='Directory containing logo images')
 
-# Define the logo size and spacing
-LOGO_SIZE = 110
-LOGO_SPACING = 125
+args = parser.parse_args()
 
-# Define the logo direction
-# Options: 'horizontal', 'vertical', 'diagonal_left', 'diagonal_right'
-DIRECTION = 'horizontal'
-
-# Choose the overlay opacity option (0-255)
-# 0 means fully transparent, 255 means fully opaque
-OVERLAY_OPACITY = 127
-
-# Define the title text and font
-TITLE_TEXT = "A Really Cool Title!"
-# Define the subtitle text and font (Helps break the ice with humour)
-SUBTITLE_TEXT = "Subtitle Text Here"
-# Maximum WIDTH of the title text (80% of the image WIDTH)
-MAX_TITLE_WIDTH = WIDTH
-TITLE_FONT_SIZE = 140
-SUBTITLE_FONT_SIZE = 100
-REGULAR_FONT = ImageFont.truetype("fonts/Amaranth-Regular.otf", TITLE_FONT_SIZE)
-BOLD_FONT = ImageFont.truetype("fonts/Amaranth-Bold.otf", TITLE_FONT_SIZE)  # Bold font
-SUBTITLE_FONT = ImageFont.truetype("fonts/Amaranth-Regular.otf", SUBTITLE_FONT_SIZE)
-
-# Minimum number of lines for the title text
-MIN_LINES = 1  # Set to 1 for no minimum
-
-# Choose the font option
-# Options: 'regular', 'bold'
-FONT_OPTION = 'bold'
-
-# Text outline settings
-TEXT_OUTLINE_WIDTH = 1  # Adjust the outline WIDTH as desired
-TEXT_OUTLINE_COLOR = (0, 0, 0, 255)  # Black outline color (RGBA)
-
-# Choose the alignment option
-# Options: 'left', 'right', 'center', 'justified'
-ALIGNMENT = 'center'
-
-# Specify the folder containing the logo images
-LOGO_FOLDER = 'Logos'
+BG_COLOR = tuple(args.background_color)
+IMAGE_WIDTH = args.image_width
+IMAGE_HEIGHT = args.image_height
+LOGO_SIZE = args.logo_size
+LOGO_SPACING = args.logo_spacing
+LOGO_DIRECTION = args.logo_direction
+OVERLAY_OPACITY = args.overlay_opacity
+TITLE_TEXT = args.title_text
+SUBTITLE_TEXT = args.subtitle_text
+MAX_TITLE_WIDTH = IMAGE_WIDTH
+TITLE_FONT_SIZE = args.title_font_size
+SUBTITLE_FONT_SIZE = args.subtitle_font_size
+TITLE_FONT = ImageFont.truetype(args.title_font, TITLE_FONT_SIZE)
+TITLE_FONT_BOLD = ImageFont.truetype(args.title_font_bold, TITLE_FONT_SIZE)
+SUBTITLE_FONT = ImageFont.truetype(args.subtitle_font, SUBTITLE_FONT_SIZE)
+MIN_TITLE_LINES = args.min_title_lines
+FONT_STYLE = args.font_style
+TEXT_OUTLINE_WIDTH = args.text_outline_width
+TEXT_OUTLINE_COLOR = tuple(args.text_outline_color)
+TEXT_ALIGNMENT = args.text_alignment
+LOGO_DIRECTORY = args.logo_directory

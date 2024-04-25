@@ -1,3 +1,5 @@
+# save_image.py
+
 def save_image(img, filename):
     try:
         img.save("./thumbnails/" + filename + ".png")

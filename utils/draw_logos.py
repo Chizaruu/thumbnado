@@ -1,3 +1,5 @@
+# draw_logos.py
+
 import os
 from PIL import Image
 
