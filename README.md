@@ -66,7 +66,7 @@ Available options:
 
 Example usage:
 
-`python main.py --background-color 255 0 0 --image-width 800 --image-height 600 --logo-size 80 --logo-spacing 100 --logo-direction vertical --overlay-opacity 200 --title-text "My Awesome Thumbnail" --subtitle-text "Check out this cool video!" --title-font-size 120 --subtitle-font-size 80 --font-style regular --min-title-lines 2 --text-outline-width 2 --text-outline-color 0 0 0 200 --text-alignment left --logo-directory "path/to/logos" --diagonal-left-spacing 10 --diagonal-right-spacing 20 --title-font "path/to/custom-title-font.ttf" --title-font-bold "path/to/custom-title-font-bold.ttf" --subtitle-font "path/to/custom-subtitle-font.ttf"`
+`python main.py --background-color 255 0 0 --image-width 800 --image-height 600 --logo-size 80 --logo-spacing 100 --logo-direction vertical --overlay-opacity 200 --title-text "My Awesome Thumbnail" --subtitle-text "Check out this cool video!" --title-font-size 120 --subtitle-font-size 80 --font-style regular --min-title-lines 2 --text-outline-width 2 --text-outline-color 0 0 0 200 --text-alignment left --logo-directory "path/to/logos" --title-font "path/to/custom-title-font.ttf" --title-font-bold "path/to/custom-title-font-bold.ttf" --subtitle-font "path/to/custom-subtitle-font.ttf"`
 
 ## Contributing 🤝
 
