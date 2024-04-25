@@ -9,7 +9,6 @@ Thumbnado is a powerful and customizable thumbnail generator that allows you to 
 - 📝 Customizable title and subtitle text
 - 🎨 Adjustable font styles, sizes, and colours
 - 🎭 Multiple text alignment options
-- 💾 Easy-to-use API for generating and saving thumbnails
 
 ## Installation 💻
 
