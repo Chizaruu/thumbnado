@@ -30,11 +30,11 @@ To use Thumbnado, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Place your desired logo images in the `Logos` folder.
+4. Place your desired logo images in the `Logos` folder.  (Optional)
 
-5. Place your desired font files in the `fonts` folder.
+5. Place your desired font files in the `fonts` folder.  (Optional)
 
-6. Update the `configuration.py` file with your desired settings, such as background colour, font sizes, and file paths.
+6. Update the `configuration.py` file with your desired settings, such as background colour, font sizes, and file paths. (Optional)
 
 ## Usage 🚀
 
